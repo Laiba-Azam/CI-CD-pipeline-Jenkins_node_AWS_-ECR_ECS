@@ -11,6 +11,9 @@ const app = express();
 app.get('/', (req, res) => {
   res.send('Hello world\n');
 });
+app.get('/health', (req, res) => {
+  res.status(200).send('OK'); // Or a more detailed health check response
+});
 
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
