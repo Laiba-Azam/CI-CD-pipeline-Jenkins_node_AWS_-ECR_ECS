@@ -1,1 +1,2 @@
-
+First configure aws profile using aws configure --profile laiba_azam and add the config and credentials file to /var/lib/jenkins/.aws
+and also give jenkins sudo privileges and also add jenkins to docker and laiba group
